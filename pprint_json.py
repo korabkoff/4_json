@@ -1,10 +1,12 @@
-import json, sys
+import json
+import sys
 
 
-def load_data(filepath):
-    with open(filepath, 'r') as handle:
-        return json.load(handle)
-
+def load_json_data(filepath):
+    if not os.path.exists(filepath):
+        return None
+    with open(filepath, 'r') as json_file:
+        return json.load(json_file)
 
 
 def pretty_print_json(data):
@@ -12,6 +14,5 @@ def pretty_print_json(data):
 
 
 if __name__ == '__main__':
-    # print(sys.argv[1])
-    data = load_data(sys.argv[1])
-    pretty_print_json(data)
+    json_content = load_json_data(sys.argv[1])
+    pretty_print_json(json_content)
