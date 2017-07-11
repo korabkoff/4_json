@@ -1,6 +1,6 @@
 # Prettify JSON
 
-Script for Pretty print JSON by given file path, handling russian characters
+Script for Pretty print JSON for given file path. Shows non ASCII characters like cyrillic characters.
 
 # Quickstart
 
@@ -69,7 +69,7 @@ $ python pprint_json.py <path to file>
         "Id": "79742784-9ef3-4543-bc98-a219a8903c18",
         "Number": 1
     },
-
+```
 
 # Project Goals
 
