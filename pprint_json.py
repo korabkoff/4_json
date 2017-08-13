@@ -39,7 +39,7 @@ if __name__ == '__main__':
         parser = parse_args(sys.argv[1:])
 
         json_file_path = parser.filepath.name
-    except:
+    except IOError:
         json_file_path = None
 
     if json_file_path:
